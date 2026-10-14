@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emotion Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="app-shell">
+        <section class="panel">
+            <h1>Emotion Detector</h1>
+            <form id="emotion-form">
+                <label for="text-to-analyze">Text to analyze</label>
+                <textarea id="text-to-analyze" name="textToAnalyze" rows="6" placeholder="Type a sentence here"></textarea>
+                <button type="submit">Analyze</button>
+            </form>
+            <p id="result" class="result" aria-live="polite"></p>
+        </section>
+    </main>
+    <script src="{{ url_for('static', filename='mywebscript.js') }}"></script>
+</body>
+</html>
